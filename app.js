@@ -18,7 +18,7 @@ app.use(bodyParser.json()); // content-type:application/json
 app.use("public", express.static(path.join("__dirname", "public")));
 
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+//   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
     "Access-Control-Allow-Methods",
     "OPTIONS, GET, POST, PUT, PATCH, DELETE"
